@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>{{ base_url }}</loc>
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>{{ second_base_url }}</loc>
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>{{ base_url }}/</loc>
+    <xhtml:link rel="amphtml" href="{{ base_url }}/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>{{ second_base_url }}/</loc>
+    <xhtml:link rel="amphtml" href="{{ second_base_url }}/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>{{ base_url }}/blog</loc>
+    <xhtml:link rel="amphtml" href="{{ base_url }}/blog/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>{{ second_base_url }}/blog</loc>
+    <xhtml:link rel="amphtml" href="{{ second_base_url }}/blog/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>{{ base_url }}/projects</loc>
+    <xhtml:link rel="amphtml" href="{{ base_url }}/projects/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>{{ second_base_url }}/projects</loc>
+    <xhtml:link rel="amphtml" href="{{ second_base_url }}/projects/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>{{ base_url }}/about</loc>
+    <xhtml:link rel="amphtml" href="{{ base_url }}/about/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>{{ second_base_url }}/about</loc>
+    <xhtml:link rel="amphtml" href="{{ second_base_url }}/about/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>{{ second_base_url }}/contact</loc>
+    <xhtml:link rel="amphtml" href="{{ base_url }}/contact/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>{{ second_base_url }}/contact</loc>
+    <xhtml:link rel="amphtml" href="{{ second_base_url }}/contact/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>{{ second_base_url }}/domains</loc>
+    <xhtml:link rel="amphtml" href="{{ base_url }}/domains/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>{{ second_base_url }}/domains</loc>
+    <xhtml:link rel="amphtml" href="{{ second_base_url }}/domains/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  {%- for article in articles %}
+  <url>
+    <loc>{{ base_url }}/view/blog/{{ article }}</loc>
+    <xhtml:link rel="amphtml" href="{{ base_url }}/view/blog/{{ article }}/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  {%- endfor -%}
+  {%- for article in articles %}
+  <url>
+    <loc>{{ second_base_url }}/view/blog/{{ article }}</loc>
+    <xhtml:link rel="amphtml" href="{{ second_base_url }}/view/blog/{{ article }}/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  {%- endfor -%}
+
+  {%- for article in doms %}
+  <url>
+    <loc>{{ base_url }}/view/blog/{{ article }}</loc>
+    <xhtml:link rel="amphtml" href="{{ base_url }}/domain/{{ article }}/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  {%- endfor -%}
+  {%- for article in doms %}
+  <url>
+    <loc>{{ second_base_url }}/view/blog/{{ article }}</loc>
+    <xhtml:link rel="amphtml" href="{{ second_base_url }}/domain/{{ article }}/amp" />
+    <lastmod>{{ dates }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  {%- endfor -%}
+</Urlset>
